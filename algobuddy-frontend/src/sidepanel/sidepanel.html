@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AlgoBuddy</title>
+  <link rel="stylesheet" href="./sidepanel.css">
+  <link rel="stylesheet" href="../components/prism-okaidia.min.css">
+</head>
+<body>
+  <header>
+    <img src="../images/icon128.png" alt="AlgoBuddy Logo" class="logo"/>
+    <h1>AlgoBuddy</h1>
+  </header>
+
+  <main>
+    <section id="results" class="results-box">
+      <p class="placeholder">Your results will appear here...</p>
+    </section>
+
+    <div class="timer-section">
+      <label>Auto-Hint In:</label>
+      <div class="timer-options">
+        <button class="timer-btn" data-time="60">1m</button>
+        <button class="timer-btn" data-time="300">5m</button>
+        <button class="timer-btn" data-time="600">10m</button>
+        <button class="timer-btn" data-time="1200">20m</button>
+      </div>
+    </div>
+    <div id="timer-status"></div>
+
+    <div class="btn-row">
+      <button id="hint" class="btn secondary">Hint</button>
+      <button id="code" class="btn secondary">Code</button>
+      <button id="procedure" class="btn secondary">Procedure</button>
+    </div>
+  </main>
+  
+  <script src="../components/marked.min.js"></script>
+  <script src="../components/prism.min.js"></script>
+  <script type="module" src="./sidepanel.js"></script>
+</body>
+</html>
